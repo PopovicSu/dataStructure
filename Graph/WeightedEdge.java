@@ -13,6 +13,7 @@ public class WeightedEdge extends Edge implements Comparable<WeightedEdge> {
 
     @Override
     public int compareTo(WeightedEdge o) {
+        //定义比较的方法，用以排列优先级.
         if (weight > o.weight) {
             return 1;
         } else if (weight < o.weight) {
